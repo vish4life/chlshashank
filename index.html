@@ -1,0 +1,767 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="images/websiteicon.png">
+    <title>Lakshmi Shashank</title>
+    <script>
+        function greet() {
+            const greetings = ['Hola', 'Hello', 'Bonjour', 'Namasthey'];
+            const randomGreeting = greetings[Math.floor(Math.random() * greetings.length)];
+            document.querySelector('.greet-text').textContent = randomGreeting + ' ..!';
+        }
+        onload = greet;
+    </script>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div>
+                <a href="#home"><img src="images/nav/home1.png" alt="Home"></a>
+                <label for="home">Home</label>
+            </div>
+            <div>
+                <a href="#about"><img src="images/nav/user4.png" alt="About"></a>
+                <label for="about">About</label>
+            </div>
+            <div>
+                <a href="#projects"><img src="images/nav/projects2.png" alt="Projects"></a>
+                <label for="projects">Projects</label>
+            </div>
+            <div>
+                <a href="#techstack"><img src="images/nav/techstack.png" alt="Tech Stack"></a>
+                <label for="techstack">Tech</label>
+            </div>
+            <div>
+                <a href="#hobbies"><img src="images/nav/hobby1.png" alt="Hobbies"></a>
+                <label for="hobbies">Hobbies</label>
+            </div>
+            <div>
+                <a href="#connect"><img src="images/nav/contact.png" alt="Connect"></a>
+                <label for="connect">Connect</label>
+            </div>
+
+        </nav>
+    </header>
+    <main>
+        <section id="home">
+            <div class="container">
+                <div class="inner-container">
+                    <div class="container-header">
+                        <img src="images/shashank.jpg" alt="Profile">
+                        <h1 class="greet-text"></h1>
+                    </div>
+                    <hr />
+                    <p style="font-style: italic;">
+                        Welcome to my digital space! I am <strong>Lakshmi Shashank</strong>, a technology
+                        professional dedicated to building innovative, user-centric solutions. With a deep foundation in
+                        banking and a passion for modern development, I bridge the gap between complex financial systems
+                        and intuitive digital experiences.
+                        <br />
+                        <br />Explore my journey, projects, and the technologies I'm passionate about. &#128071;
+                    </p>
+                </div>
+            </div>
+        </section>
+        <section id="about">
+            <div class="container">
+                <div class="inner-container">
+                    <div class="container-header">
+                        <h2>ABOUT</h2>
+                    </div>
+                    <hr />
+                    <p>
+                        With over 16 years of experience in the <strong>Banking & Finance</strong> sector, I have
+                        developed a deep expertise in core banking integration and financial technology. For the past 5+
+                        years, I have led high-performing development teams as a <strong>Manager</strong>, focusing on
+                        delivering robust, scalable, and secure integration solutions.
+                        <br />My career is built on a foundation of technical excellence and strategic leadership,
+                        ensuring technology serves as a powerful enabler for financial services.
+                    </p>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="events-container">
+                <div class="events">
+                    <div class="events-header">
+                        <p>EDUCATION</p>
+                    </div>
+                    <div class="events-content">
+                        <div class="event-info">
+                            <div class="event-info-elements">
+                                <p class="event-info-year">2015-2016</p>
+                                <h4>University of Central Missouri
+                                    <br />Missouri, USA
+                                </h4>
+                                <p>Masters - CIS & IT</p>
+                            </div>
+                            <hr />
+                            <div class="event-info-image"><img src="images/edu/ucm.png" alt="Masters">
+                            </div>
+                        </div>
+                        <div class=" event-info">
+                            <div class="event-info-elements">
+                                <p class="event-info-year">2010-2011</p>
+                                <h4>Manipal Academy
+                                    <br />Bangalore, India
+                                </h4>
+                                <p>PG Diploma - Banking & Finance</p>
+                            </div>
+                            <hr />
+                            <div class="event-info-image"><img src="images/edu/mahe4.png" alt="PGDip">
+                            </div>
+                        </div>
+                        <div class="event-info">
+                            <div class="event-info-elements">
+                                <p class="event-info-year">2004-2008</p>
+                                <h4>JN Technical University
+                                    <br />Hyderabad, India
+                                </h4>
+                                <p>B.Tech - Aeronautical Engineering</p>
+                            </div>
+                            <hr />
+                            <div class="event-info-image"><img src="images/edu/jntuh.png" alt="BTech"
+                                    style="width: 100px;">
+                            </div>
+                        </div>
+                        <div class="event-info">
+                            <div class="event-info-elements">
+                                <p class="event-info-year">2002-2004</p>
+                                <h4>Sri Chaitanya Junior College
+                                    <br />Hyderabad, India
+                                </h4>
+                                <p>Secondary Education - MPC</p>
+                            </div>
+                            <hr />
+                            <div class="event-info-image"><img src="images/edu/bie.png" alt="Secondary Education"
+                                    style="width: 100px;"></div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+        <br />
+        <section id="timeline">
+            <div class="events-header">
+                <p>WORK EXPERIENCE</p>
+            </div>
+            <div class="timeline">
+                <div class="timeline-item active">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <span class="date">2023 - Present</span>
+                        <h4>Manager</h4>
+                        <h5>Capgemini Canada Solutions Inc., Mississauga, ON</h5>
+                        <hr />
+                        <ul class="timeline-list">
+                            <li>Leading cross functional teams to deliver projects on time and provide production
+                                support</li>
+                            <li>Banking domain expertise in Clearing (ACH, Cheque, Wire, POS)</li>
+                            <li>Developed API's to integrate Corebanking application with FICO DMP, Mitek, and Ensenta
+                                (Jack
+                                Henry)</li>
+                            <li>Leading POC for Retrieval Augmented Generation (RAG) project to identify fraud
+                                transactions on
+                                real-time</li>
+                            <li>Part of the Mississauga leadership team responsible for onboarding new hires, Time Sheet
+                                compliance,
+                                Training, Certification and Performance review</li>
+                            <li>Leading the bank migration of Clearing (ACH, Cheque, Wire, POS) to new platform (bank
+                                COF)</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <span class="date">2018-2023</span>
+                        <h4>Team Lead</h4>
+                        <h5>Capgemini Canada Solutions Inc., Mississauga, ON</h5>
+                        <hr />
+                        <ul class="timeline-list">
+                            <li>Collaborated with Product owners to transform requirements into DTD's, HLD's and ICD's
+                            </li>
+                            <li>Collaborated with cross functional and testing teams during development and testing
+                                phases to
+                                successfully deliver projects</li>
+                            <li>Led team and developed backend APIs as part of Core-banking integration for Wire
+                                transfers, OFAC
+                                compliance validation, Same Day ACH, Expedited ACH, etc.</li>
+                            <li>Provided training and mentored new engineers on banking processes and procedures as part
+                                of
+                                Knowledge
+                                sharing sessions</li>
+                            <li>Conducted code reviews and provided feedback to team members to improve code quality
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <span class="date">2016-2018</span>
+                        <h4>Senior Consultant</h4>
+                        <h5>Capgemini America Inc., Chicago, IL</h5>
+                        <hr />
+                        <ul class="timeline-list">
+                            <li>Implemented testing frameworks across all Lines of Business using Jmeter, Cucumber
+                                frameworks
+                                for backend
+                                API testing (SOAP API using XML)
+                                <ul>
+                                    <li>Jmeter is used for performance testing</li>
+                                    <li>Cucumber for BDD using Gherkin</li>
+                                </ul>
+                            </li>
+                            <li>Developed PL/SQL reports for detecting potential red list customers as part of
+                                Predictive
+                                Analysis project</li>
+                            <li>Developed Online beneficiary maintenance using Javascript, HTML, CSS as part of Project
+                                bright
+                                side (self-
+                                service) which allows users to enroll and un-enroll beneficiaries in real time</li>
+                            <li>Conducted Data Analysis on fraud patterns observed in clearing (Cheque)</li>
+                            <li>Provided On-Call production support for L1/L2 issues</li>
+                            <li>Got Trained on Finacle (core banking application)</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <span class="date">2016-2016</span>
+                        <h4>Senior Analyst</h4>
+                        <h5>The Diligent Group LLC, Hoover, AL</h5>
+                        <hr />
+                        <ul class="timeline-list">
+                            <li>Developed Automation testing suite using nUnit &amp; Selenium framework for NOLB (new
+                                online
+                                banking) project
+                                using C#
+                                <ul>
+                                    <li>NOLB is version upgrade project built on Corillian platform</li>
+                                    <li>Features tested:
+                                        <ul>
+                                            <li>PopMoney which allows customers to transfer funds using mobile numbers
+                                            </li>
+                                            <li>VisaCheckout which allows customers to pay using one click without
+                                                needing to
+                                                enter card
+                                                details</li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            <li>Worked closely with the developer’s team, helping in content management related tasks
+                                like
+                                updating the UI
+                                content using HTML &amp; CSS for Terms section &amp; e-Consent section, to ensure timely
+                                completion of project
+                                milestones</li>
+                            <li>Worked with the data analyst’s team on Proof of Concept (POC) for Fraud Pattern Matching
+                                (FPM),
+                                leveraging
+                                historical data to detect potential suspects during account origination.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <span class="date">2011-2014</span>
+                        <h4>Deputy Manager - II</h4>
+                        <h5>ICICI Bank Ltd, Hyderabad, India</h5>
+                        <hr />
+                        <ul class="timeline-list">
+                            <li>Served as Lead Technical Business Analyst, managing three teams during the migration of
+                                bank
+                                from version
+                                7X to 10X
+                                <ul>
+                                    <li>Version 7X is a standalone application wherein version 10X is web-based
+                                        application
+
+                                    <li>Migration activities included Daily status checks on UAT / SIT, Environment
+                                        configuration, Gap Analysis
+                                        and Data mapping</li>
+                                    <li>Managed testing team, Platform team and Vendor development team for Personal
+                                        banking /
+                                        Corporate
+                                        lending products and End of the day / Beginning of the day activities of bank
+                                    </li>
+                                    <li>Mentoring and training the team on the banking procedures</li>
+                                </ul>
+                            </li>
+                            <li>Developed XML templates for Email / SMS alerts as part of GAS (generic alert system)
+                                project for
+                                Loan
+                                Disbursement, Term deposit Interest credit etc.
+
+                            <li>Led the Integration project of electronic fund transfer systems NEFT, RTGS with bank
+                            </li>
+                            <li>Acted as a liaison between ICICI bank, Infosys, Nucleus Software, and Internal Vendors
+                                throughout the
+                                development and migration phases of the 10X project</li>
+                            <li>Built a command center team from scratch, to support post migration activities like
+                                <ul>
+                                    <li>Change management for enhancements and bug fixes</li>
+                                    <li>Database administration like upgrade, backup, restore, maintenance and
+                                        performance
+                                        optimization</li>
+                                    <li>Monitor app to identify and track the issues</li>
+                                    <li>On call support to L1/L2 issues</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <span class="date">2009-2010</span>
+                        <h4>Technical Associate</h4>
+                        <h5>Dell International Services Pvt Ltd. Hyderabad, India </h5>
+                        <hr />
+                        <ul class="timeline-list">
+                            <li>Troubleshoot Gaming issues with the XPS Systems, Network related issues with Dell
+                                Products and
+                                Support
+                                installation of both Dell Hardware and Software
+                            </li>
+                            <li>Dell certified systems expert for XPS, Vostro, Foundation Desktop systems</li>
+                            <li>Trained and Mentored teams on Dell Technical support processes and procedures</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <span class="date">2008-2009</span>
+                        <h4>Technical Support</h4>
+                        <h5>Wipro Technologies. Hyderabad, India</h5>
+                        <hr />
+                        <ul class="timeline-list">
+                            <li>Provided technical support for HP desktops / laptops</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="projects">
+            <div class="container">
+                <div class="inner-container">
+                    <div class="container-header">
+                        <h2>PROJECTS</h2>
+                    </div>
+                    <hr />
+                    <p>
+                        My portfolio features a blend of professional internships and personal projects that reflect my
+                        technical versatility. My personal projects serve as a playground for refining my skills in
+                        <strong>ReactJS, React Native, Django, and Python</strong>, with a particular focus on
+                        integrating <strong>Artificial Intelligence</strong> to solve real-world problems.
+                        <br />From full-stack web applications to AI-powered chat systems, these projects demonstrate my
+                        commitment to hands-on learning and staying at the forefront of the industry.
+                    </p>
+                </div>
+            </div>
+        </section>
+        <br />
+        <section>
+            <div class="events-header">
+                <p>INTERNSHIPS</p>
+            </div>
+            <div class="intern-container">
+                <div class="intern1">
+                    <div class="intern-content">
+                        <p class="intern-content-header"> DEC 2015 - MAR 2016</p>
+                        <hr />
+                        <h3>Anzeon Inc.<br /> Kansas City, USA</h3>
+                        <h5 class="intern-role">Database Administrator</h5>
+                        <p class="intern-content-text">As a Programmer Intern performed the following tasks:</p>
+                        <ul class="intern-list">
+                            <li>Database Backup and Recovery</li>
+                            <li>Database Performance Tuning</li>
+                            <li>Batch scheduler to trigger daily jobs and alerts</li>
+                        </ul>
+                        <img class="intern-image" src="images/internships/anzeon.png" alt="Anzeon">
+                    </div>
+                </div>
+                <div class="intern2">
+                    <div class="intern-content">
+                        <p class="intern-content-header">JAN 2008 - MAR 2008</p>
+                        <hr />
+                        <h3>Hindustan Aeronautical Ltd.<br /> Bangalore, India</h3>
+                        <h5 class="intern-role">Stress Analysis Apprentice</h5>
+                        <p class="intern-content-text">A an Stress Analysis Apprentice performed the following tasks:
+                        </p>
+                        <ul class="intern-list">
+                            <li>Examined the Nose Wheel landing gear of Surya Kiran aircraft</li>
+                            <li>Used NASTRAN/PATRAN to perform the Stress Analysis</li>
+                        </ul>
+                        <img class="intern-image" src="images/internships/hal.png" alt="HAL">
+                    </div>
+                </div>
+                <div class="intern3">
+                    <div class="intern-content">
+                        <p class="intern-content-header">OCT 2007 - DEC 2007</p>
+                        <hr />
+                        <h3>Air India Ltd.<br /> Hyderabad, India</h3>
+                        <h5 class="intern-role">Aircraft Maintenance Apprentice</h5>
+                        <p class="intern-content-text">As an Aircraft Maintenance Apprentice performed the following
+                            tasks:</p>
+                        <ul class="intern-list">
+                            <li>Monitoring of the Radio Signals reception</li>
+                            <li>Checklist of the pre-flight and post-flight activities</li>
+                            <li>Assisting the crew in the maintenance of the aircraft</li>
+                        </ul>
+                        <img class="intern-image" src="images/internships/air.svg" alt="Air India">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <br />
+        <section>
+            <div class="events-header">
+                <p>PERSONAL PROJECTS</p>
+            </div>
+            <div class="projects-container">
+                <div class="projects">
+                    <p class="project-header">Generative Art Applications</p>
+                    <div class="project-info">
+                        <a href="https://github.com/vish4life/acodeofarts" target="_blank" rel="noopener noreferrer">
+                            <img class="project-image" src="./images/projects/particles.png" alt="">
+                        </a>
+                        <div>
+                            <h5 class="project-name">Particles Scattering</h5>
+                            <p>A generative art application which allows users to generate particles scattering art</p>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <a href="https://github.com/vish4life/acodeofarts" target="_blank" rel="noopener noreferrer">
+                            <img class="project-image" src="./images/projects/birds.png" alt="">
+                        </a>
+                        <div>
+                            <h5 class="project-name">Birds of Meta 2D</h5>
+                            <p>A generative art application which allows users to generate birds of meta 2D art</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="projects">
+                    <p class="project-header">Web Applications</p>
+                    <div class="project-info">
+                        <a href="https://github.com/vish4life/PeachHouse-Fullstack/blob/8034079c13693c4a8f24f14d990dd6cf912764e3/snapshots/homepage.jpg"
+                            target="_blank" rel="noopener noreferrer">
+                            <img class="project-image" src="./images/projects/fullstack2.jpg"
+                                alt="Peach House Restaurant">
+                        </a>
+                        <div>
+                            <h5 class="project-name">Peach House Restaurant</h5>
+                            <p>A restaurant application which allows users to order food online, book tables and view
+                                menu items
+                            </p>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <a href="https://github.com/vish4life/kucoinapi_frontend" target="_blank"
+                            rel="noopener noreferrer">
+                            <img class="project-image" src="./images/projects/crypto.png" alt="">
+                        </a>
+                        <div>
+                            <h5 class="project-name">Crypto Analysis</h5>
+                            <p>A fullstack application which allows users to analyze crypto prices and volumes to
+                                predict the
+                                ticker trend</p>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <a href="https://github.com/vish4life/LittleLemon-FullStack" target="_blank"
+                            rel="noopener noreferrer">
+                            <img class="project-image" src="./images/projects/fullstack.jpeg" alt="">
+                        </a>
+                        <div>
+                            <h5 class="project-name">Little Lemon Restaurant</h5>
+                            <p>A restaurant application which allows users to order food online, book tables and view
+                                menu items
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="projects">
+                    <p class="project-header">Mobile Applications</p>
+                    <div class="project-info">
+                        <a href="https://github.com/vish4life/peachhousemobile/blob/main/README.md" target="_blank"
+                            rel="noopener noreferrer">
+                            <img class="project-image" src="./images/projects/reactexpoph.png" alt="">
+                        </a>
+                        <div>
+                            <h5 class="project-name">Peach House Restaurant</h5>
+                            <p>A restaurant application which allows users to order food online, book tables and view
+                                menu items
+                            </p>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <a href="https://github.com/vish4life/todoTasks" target="_blank" rel="noopener noreferrer">
+                            <img class="project-image" src="./images/projects/todo.png" alt="">
+                        </a>
+                        <div>
+                            <h5 class="project-name">Todo App</h5>
+                            <p>A todo application which allows users to add, delete and update tasks</p>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <a href="https://github.com/vish4life/bv_v01_bare_RN" target="_blank" rel="noopener noreferrer">
+                            <img class="project-image" src="./images/projects/boltvault.png" alt="">
+                        </a>
+                        <div>
+                            <h5 class="project-name">Bolt Vault</h5>
+                            <p>A vault application which allows users to store and manage their sensitive data</p>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <a href="https://github.com/vish4life/yoquiz" target="_blank" rel="noopener noreferrer">
+                            <img class="project-image" src="./images/projects/yoquiz.png" alt="">
+                        </a>
+                        <div>
+                            <h5 class="project-name">YoQuiz</h5>
+                            <p>A quiz application which allows users to take quizzes</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="projects">
+                    <p class="project-header">AI/ML Applications</p>
+                    <div class="project-info">
+                        <a href="https://github.com/vish4life/RAGLite" target="_blank" rel="noopener noreferrer">
+                            <img class="project-image" src="./images/projects/rag.jpg" alt="">
+                        </a>
+                        <div>
+                            <h5 class="project-name">RAGLite</h5>
+                            <p>A RAG AI Chatbot which allows users to train model with custom data by feeding documents
+                                and chat
+                                with AI</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="techstack">
+            <div class="container">
+                <div class="inner-container">
+                    <div class="container-header">
+                        <h2>TECH STACK</h2>
+                    </div>
+                    <hr />
+                    <p>
+                        I am deeply passionate about technology and make it a priority to stay updated with the rapidly
+                        evolving tech landscape. Whether it's exploring the latest features in modern web frameworks or
+                        diving into the potential of Generative AI, I am constantly learning and experimenting.
+                        <br />My commitment to excellence is backed by certifications in <strong>Cloud Computing, AI,
+                            and Full-Stack Development</strong>, allowing me to build end-to-end solutions that are both
+                        modern and reliable.
+                    </p>
+                </div>
+            </div>
+        </section>
+        <br />
+        <section>
+            <div class="tech-container">
+                <div class="tech-content">
+                    <p>LANGUAGES</p>
+                    <br />
+                    <div class="tech-info">
+                        <img class="tech-info-img" src="images/lang/html.png" alt="HTML">
+                        <img class="tech-info-img" src="images/lang/css.png" alt="CSS">
+                        <img class="tech-info-img" src="images/lang/js.png" alt="JavaScript">
+                        <img class="tech-info-img" src="images/lang/json.png" alt="Json">
+                        <img class="tech-info-img" src="images/lang/python.png" alt="Python">
+                        <img class="tech-info-img" src="images/lang/sql.png" alt="SQL">
+                        <img class="tech-info-img" src="images/lang/xml.png" alt="XML">
+                        <img class="tech-info-img" src="images/lang/react.png" alt="React">
+                        <img class="tech-info-img" src="images/lang/django.png" alt="Django">
+                    </div>
+                </div>
+                <div class="tech-content">
+                    <p>TOOLS</p>
+                    <br />
+                    <div class="tech-info">
+                        <img class="tech-info-img" src="images/tools/vstudio.png" alt="Visual Studio">
+                        <img class="tech-info-img" src="images/tools/vscode.png" alt="Visual Studio Code">
+                        <img class="tech-info-img" src="images/tools/teams.png" alt="Teams">
+                        <img class="tech-info-img" src="images/tools/excel.png" alt="Excel">
+                        <img class="tech-info-img" src="images/tools/word.png" alt="Word">
+                        <img class="tech-info-img" src="images/tools/powerpoint.png" alt="PowerPoint">
+                        <img class="tech-info-img" src="images/tools/aws.png" alt="AWS">
+                        <img class="tech-info-img" src="images/tools/oci.png" alt="Oracle Cloud">
+                        <img class="tech-info-img" src="images/tools/mysql.png" alt="MySQL">
+                        <img class="tech-info-img" src="images/tools/jenkins1.png" alt="Jenkins">
+                        <img class="tech-info-img" src="images/tools/github.png" alt="GitHub">
+                        <img class="tech-info-img" src="images/tools/xcode.png" alt="Xcode">
+                        <img class="tech-info-img" src="images/tools/insomnia1.png" alt="Insomnia">
+
+                    </div>
+                </div>
+                <div class="tech-content">
+                    <p>CERTIFICATIONS</p>
+                    <br />
+                    <div class="tech-info">
+                        <a href="https://catalog-education.oracle.com/ords/certview/sharebadge?id=36F40722E2847530F7A709E3927B3DF84B55A49893740B9B04BC8A3A66CA1FC0"
+                            target=" _blank" rel="noopener noreferrer"><img style="cursor: pointer;" class="
+                                tech-info-img" style="width: 80px;" src="images/certs/ociprogenai.png"
+                                alt="Oracle Cloud"></a>
+                        <a href="https://catalog-education.oracle.com/ords/certview/sharebadge?id=002C7A617457F39AB133531F583C0C92A8F72CACE4D6DCE816A4EBDD26241A64"
+                            target=" _blank" rel="noopener noreferrer"><img style="cursor: pointer;" class="
+                                tech-info-img" style="width: 80px;" src="images/certs/ociassoai.png"
+                                alt="Oracle Cloud"></a>
+                        <a href="https://catalog-education.oracle.com/ords/certview/sharebadge?id=5E03F13EF70701FD69A9C04FA5557CE07A7ED79530649699DF9D81D4A2CD9FE0"
+                            target=" _blank" rel="noopener noreferrer"><img style="cursor: pointer;" class="
+                                tech-info-img" style="width: 80px;" src="images/certs/ociassocld.png"
+                                alt="Oracle Cloud"></a>
+                        <a href="https://www.credly.com/badges/3c549179-a6f4-46a7-8840-e91fd1da499d/public_url"
+                            target=" _blank" rel="noopener noreferrer"><img style="cursor: pointer;" class="
+                                tech-info-img" style="width: 80px;" src="images/certs/fullstack.png"
+                                alt="Full Stack"></a>
+                        <a href="https://www.credly.com/badges/70c71cc2-f5dd-4d5f-9f8c-8f4c54946423/public_url"
+                            target=" _blank" rel="noopener noreferrer"><img style="cursor: pointer;" class="
+                                tech-info-img" style="width: 80px;" src="images/certs/fe.png" alt="Frontend"></a>
+                        <a href="https://www.credly.com/badges/5cddcab0-b5e0-4ebe-89c8-bcc256e0a9f0/public_url"
+                            target=" _blank" rel="noopener noreferrer"><img style="cursor: pointer;" class="
+                                tech-info-img" style="width: 80px;" src="images/certs/be.png" alt="Backend"></a>
+                        <a href="https://www.credly.com/badges/e2161c78-1e7a-4c89-902e-c92167884d98/public_url"
+                            target=" _blank" rel="noopener noreferrer"><img style="cursor: pointer;" class="
+                                tech-info-img" style="width: 80px;" src="images/certs/aws.png" alt="AWS"></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="hobbies">
+            <div class="container">
+                <div class="inner-container">
+                    <div class="container-header">
+                        <h2>HOBBIES</h2>
+                    </div>
+                    <hr />
+                    <p>
+                        When I’m not at my desk, you’ll likely find me exploring the world through a lens—capturing
+                        landscapes and family moments with my photography. <br />
+                        I’m a nature enthusiast who finds peace on a hiking trail and inspiration through traveling to
+                        new cultures. <br />
+                        At home, I enjoy decompressing with video games, movies, and a great soundtrack. <br />
+                        Most importantly, I cherish my time playing with my kids, whether we’re on a 'nature scavenger
+                        hunt' or just enjoying a quiet afternoon together.
+                    </p>
+                </div>
+            </div>
+        </section>
+        <br />
+        <section>
+            <div class="hobby-container">
+                <div class="hobby-content">
+                    <img src="images/hobby/photo.png" alt="Photography">
+                    <p>I love capturing the world through my lens, finding beauty in both grand landscapes and family
+                        moments. <em>Check out the Photography Highlights section below to see my work!</em></p>
+                </div>
+                <div class="hobby-content">
+                    <img src="images/hobby/hike.png" alt="Hiking">
+                    <p>There’s nothing like the peace of a mountain trail to clear the mind and stay connected with
+                        nature.</p>
+                </div>
+                <div class="hobby-content">
+                    <img src="images/hobby/music.png" alt="Music">
+                    <p>A constant companion in my life, music provides the perfect soundtrack for both focus and
+                        relaxation.</p>
+                </div>
+                <div class="hobby-content">
+                    <img src="images/hobby/cooking.png" alt="Cooking">
+                    <p>I enjoy experimenting with flavors in the kitchen, turning a meal into a creative and rewarding
+                        project.</p>
+                </div>
+                <div class="hobby-content">
+                    <img src="images/hobby/playing.png" alt="Family Game time">
+                    <p>My most cherished time is spent with my family, especially engaging in 'nature scavenger hunts'
+                        with my kids.</p>
+                </div>
+                <div class="hobby-content">
+                    <img src="images/hobby/coding.png" alt="Coding">
+                    <p>Even in my downtime, building small apps and solving puzzles through code remains a favorite
+                        creative outlet.</p>
+                </div>
+                <div class="hobby-content">
+                    <img src="images/hobby/stock.png" alt="Stocks">
+                    <p>I enjoy analyzing market trends and applying data-driven strategies to navigate the financial
+                        world.</p>
+                </div>
+                <div class="hobby-content">
+                    <img src="images/hobby/gamepad.png" alt="Video Games">
+                    <p>Whether for the storytelling or the competitive challenge, gaming is my go-to for decompressing
+                        and having fun.</p>
+                </div>
+
+
+            </div>
+        </section>
+        <br />
+        <section>
+            <div class="photos-container">
+                <img class="hobby-photos" src="images/hobby/mycaptures/sea.jpg" alt="Sea">
+                <img class="hobby-photos" src="images/hobby/mycaptures/horizon.jpg" alt="Horizon">
+                <img class="hobby-photos" src="images/hobby/mycaptures/tanjavur.jpg" alt="Tanjavur">
+                <img class="hobby-photos" src="images/hobby/mycaptures/nortedam.jpg" alt="Nortedam">
+                <img class="hobby-photos" src="images/hobby/mycaptures/food.jpg" alt="Food">
+                <img class="hobby-photos" src="images/hobby/mycaptures/owl.jpg" alt="Owl">
+                <img class="hobby-photos" src="images/hobby/mycaptures/stories.jpg" alt="Stories">
+                <img class="hobby-photos" src="images/hobby/mycaptures/natraja.jpg" alt="Natraja">
+            </div>
+        </section>
+        <section id="connect">
+            <div class="container">
+                <div class="inner-container">
+                    <div class="container-header">
+                        <h2>CONNECT</h2>
+                    </div>
+                    <hr />
+                    <p>
+                        I’m always open to discussing new opportunities, creative collaborations, or even just sharing a
+                        great hiking trail recommendation. Whether you have a specific project in mind or just want to
+                        connect, I’d love to hear from you. <strong>Let’s build something amazing together!</strong>
+                    </p>
+                    <div class="connect-icons">
+                        <a href="mailto:chlakshmishashank@gmail.com"><img class="connect-icon"
+                                src="images/connect/mail.png" alt="Gmail"></a>
+                        <a href="https://www.linkedin.com/in/lakshmishashankch/" target="_blank"
+                            rel="noopener noreferrer"><img class="connect-icon" src="images/connect/linked.png"
+                                alt="LinkedIn"></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="credits">
+
+
+                <p style="font-style: italic;">Digital design is a collaborative effort. I’d like to <a
+                        style="text-decoration: none; color:white; text-decoration: underline;" href="credits.html"
+                        target="_blank" rel="noopener noreferrer">attribute</a> the beautiful icons used throughout this
+                    site to the talented creators at Flaticon. Thank you for helping bring this portfolio to life!
+                </p>
+                <p style="opacity: 0.7;">Note: This is a static portfolio website created by Lakshmi Shashank. The
+                    content is not updated in
+                    real-time.</p>
+                <section class="footer">
+                    <hr />
+                    <p class="footer-text">&copy; 2025 Lakshmi Shashank. All rights reserved.</p>
+                    <hr />
+                </section>
+            </div>
+        </section>
+
+    </main>
+
+
+</body>
+
+</html>
